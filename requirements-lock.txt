@@ -1,0 +1,19 @@
+# Exact versions the project was built and tested with (Python 3.13, Linux).
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+statsmodels==0.15.0
+prophet==1.5.0
+xgboost==3.4.1
+scikit-learn==1.9.1
+joblib==1.6.0
+openpyxl==3.1.5
+matplotlib==3.11.2
+seaborn==0.13.2
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+pydantic==2.13.5
+streamlit==1.66.1
+plotly==7.1.0
+requests==2.34.2

@@ -1,0 +1,626 @@
+{
+  "sj": {
+    "climate_features_sarimax": [
+      {
+        "group": "temperature",
+        "variable": "temp_max_c",
+        "lag": 16,
+        "corr": 0.237
+      },
+      {
+        "group": "diurnal_range",
+        "variable": "temp_dtr_c",
+        "lag": 16,
+        "corr": 0.224
+      },
+      {
+        "group": "relative_humidity",
+        "variable": "rel_humidity_pct",
+        "lag": 9,
+        "corr": 0.199
+      }
+    ],
+    "climate_features_short_lag": [
+      {
+        "group": "temperature",
+        "variable": "temp_max_c",
+        "lag": 16,
+        "corr": 0.237
+      },
+      {
+        "group": "diurnal_range",
+        "variable": "temp_dtr_c",
+        "lag": 16,
+        "corr": 0.224
+      },
+      {
+        "group": "relative_humidity",
+        "variable": "rel_humidity_pct",
+        "lag": 4,
+        "corr": 0.219
+      },
+      {
+        "group": "vegetation",
+        "variable": "ndvi",
+        "lag": 4,
+        "corr": -0.109
+      }
+    ],
+    "xgb_climate_vars": [
+      "temp_max_c",
+      "temp_dtr_c",
+      "rel_humidity_pct",
+      "ndvi"
+    ],
+    "holt_winters": {
+      "trend": null,
+      "aic_table": {
+        "None": -1928.4,
+        "add": -1925.6
+      },
+      "smoothing": {
+        "smoothing_level": 0.4707,
+        "smoothing_trend": null,
+        "smoothing_seasonal": 0.0,
+        "damping_trend": null
+      }
+    },
+    "sarima": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        1,
+        0,
+        1,
+        52
+      ],
+      "aic": 900.8986427212434,
+      "table": [
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 955.7,
+          "bic": 980.2,
+          "fit_s": 8.5
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 957.7,
+          "bic": 987.0,
+          "fit_s": 14.7
+        },
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 900.9,
+          "bic": 930.3,
+          "fit_s": 12.6
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 905.4,
+          "bic": 939.6,
+          "fit_s": 20.3
+        },
+        {
+          "order": "(1, 0, 0)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 1046.2,
+          "bic": 1070.7,
+          "fit_s": 30.7
+        },
+        {
+          "order": "(2, 0, 0)",
+          "seasonal": "(0, 0, 0, 0)",
+          "aic": 981.2,
+          "bic": 1000.8,
+          "fit_s": 0.1
+        }
+      ]
+    },
+    "sarimax": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        1,
+        0,
+        1,
+        52
+      ],
+      "aic": 901.9932070406596,
+      "table": [
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 957.4,
+          "bic": 996.5,
+          "fit_s": 20.5
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 959.3,
+          "bic": 1003.4,
+          "fit_s": 24.2
+        },
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 902.0,
+          "bic": 946.1,
+          "fit_s": 57.8
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 906.1,
+          "bic": 955.1,
+          "fit_s": 44.1
+        },
+        {
+          "order": "(1, 0, 0)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 1048.2,
+          "bic": 1087.3,
+          "fit_s": 35.4
+        },
+        {
+          "order": "(2, 0, 0)",
+          "seasonal": "(0, 0, 0, 0)",
+          "aic": 983.1,
+          "bic": 1017.4,
+          "fit_s": 0.3
+        }
+      ],
+      "exog_coefficients": {
+        "temp_max_c_L16": 0.0578,
+        "temp_dtr_c_L16": -0.0848,
+        "rel_humidity_pct_L9": 0.0087
+      }
+    },
+    "xgb": {
+      "params": {
+        "max_depth": 2,
+        "n_estimators": 200,
+        "min_child_weight": 5
+      },
+      "cv": [
+        {
+          "max_depth": 2,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4219
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4452
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4328
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4502
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4412
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4542
+        }
+      ]
+    },
+    "hybrid": {
+      "params": {
+        "max_depth": 2,
+        "n_estimators": 200,
+        "min_child_weight": 5
+      },
+      "cv": [
+        {
+          "max_depth": 2,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4014
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.424
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4072
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4275
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.41
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.4244
+        }
+      ]
+    },
+    "xgb_importance_h4": {
+      "sin_w": 0.1184,
+      "mean13": 0.055,
+      "above_clim": 0.0506,
+      "y0": 0.0447,
+      "cos_w": 0.042,
+      "temp_max_c_a4": 0.0396,
+      "mean8": 0.0359,
+      "y_lag3": 0.0347,
+      "clim_target": 0.0339,
+      "slope8": 0.0332,
+      "rel_humidity_pct_a0": 0.0328,
+      "rel_humidity_pct_a4": 0.0327,
+      "temp_dtr_c_a4": 0.0305,
+      "ndvi_a0": 0.0298,
+      "temp_max_c_a12": 0.0295
+    },
+    "hybrid_importance_h4": {
+      "sin_w": 0.0645,
+      "temp_max_c_a12": 0.0567,
+      "mean13": 0.0428,
+      "slope8": 0.0404,
+      "rel_humidity_pct_a0": 0.0374,
+      "clim_target": 0.036,
+      "slope4": 0.0356,
+      "temp_max_c_a4": 0.0355,
+      "y0": 0.0331,
+      "mean8": 0.0321,
+      "mean4": 0.0312,
+      "temp_dtr_c_a0": 0.0303,
+      "ndvi_a0": 0.0303,
+      "above_clim": 0.0297,
+      "clim_now": 0.0297
+    }
+  },
+  "iq": {
+    "climate_features_sarimax": [
+      {
+        "group": "absolute_humidity",
+        "variable": "spec_humidity_gkg",
+        "lag": 10,
+        "corr": 0.459
+      },
+      {
+        "group": "relative_humidity",
+        "variable": "rel_humidity_pct",
+        "lag": 8,
+        "corr": 0.429
+      },
+      {
+        "group": "diurnal_range",
+        "variable": "temp_dtr_c",
+        "lag": 10,
+        "corr": -0.227
+      }
+    ],
+    "climate_features_short_lag": [
+      {
+        "group": "absolute_humidity",
+        "variable": "spec_humidity_gkg",
+        "lag": 10,
+        "corr": 0.459
+      },
+      {
+        "group": "relative_humidity",
+        "variable": "rel_humidity_pct",
+        "lag": 7,
+        "corr": 0.431
+      },
+      {
+        "group": "diurnal_range",
+        "variable": "temp_dtr_c",
+        "lag": 2,
+        "corr": -0.241
+      },
+      {
+        "group": "rainfall",
+        "variable": "precip_sat_mm",
+        "lag": 4,
+        "corr": 0.226
+      }
+    ],
+    "xgb_climate_vars": [
+      "spec_humidity_gkg",
+      "rel_humidity_pct",
+      "temp_dtr_c",
+      "precip_sat_mm"
+    ],
+    "holt_winters": {
+      "trend": null,
+      "aic_table": {
+        "None": -514.6,
+        "add": -508.6
+      },
+      "smoothing": {
+        "smoothing_level": 0.5588,
+        "smoothing_trend": null,
+        "smoothing_seasonal": 0.0,
+        "damping_trend": null
+      }
+    },
+    "sarima": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        1,
+        0,
+        1,
+        52
+      ],
+      "aic": 790.1282731358237,
+      "table": [
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 794.0,
+          "bic": 814.8,
+          "fit_s": 3.8
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 794.5,
+          "bic": 819.4,
+          "fit_s": 4.4
+        },
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 790.1,
+          "bic": 815.0,
+          "fit_s": 5.3
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 790.2,
+          "bic": 819.3,
+          "fit_s": 9.8
+        },
+        {
+          "order": "(1, 0, 0)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 848.3,
+          "bic": 869.0,
+          "fit_s": 5.2
+        },
+        {
+          "order": "(2, 0, 0)",
+          "seasonal": "(0, 0, 0, 0)",
+          "aic": 800.3,
+          "bic": 816.9,
+          "fit_s": 0.1
+        }
+      ]
+    },
+    "sarimax": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal_order": [
+        1,
+        0,
+        1,
+        52
+      ],
+      "aic": 793.7362606625592,
+      "table": [
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 798.2,
+          "bic": 831.4,
+          "fit_s": 6.8
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 0, 52)",
+          "aic": 798.6,
+          "bic": 836.0,
+          "fit_s": 8.5
+        },
+        {
+          "order": "(1, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 793.7,
+          "bic": 831.1,
+          "fit_s": 9.7
+        },
+        {
+          "order": "(2, 0, 1)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 793.8,
+          "bic": 835.3,
+          "fit_s": 16.6
+        },
+        {
+          "order": "(1, 0, 0)",
+          "seasonal": "(1, 0, 1, 52)",
+          "aic": 849.0,
+          "bic": 882.2,
+          "fit_s": 9.5
+        },
+        {
+          "order": "(2, 0, 0)",
+          "seasonal": "(0, 0, 0, 0)",
+          "aic": 803.9,
+          "bic": 833.0,
+          "fit_s": 0.1
+        }
+      ],
+      "exog_coefficients": {
+        "spec_humidity_gkg_L10": 0.0653,
+        "rel_humidity_pct_L8": 0.0043,
+        "temp_dtr_c_L10": -0.0571
+      }
+    },
+    "xgb": {
+      "params": {
+        "max_depth": 3,
+        "n_estimators": 200,
+        "min_child_weight": 5
+      },
+      "cv": [
+        {
+          "max_depth": 2,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6598
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6726
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.659
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6714
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6684
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6764
+        }
+      ]
+    },
+    "hybrid": {
+      "params": {
+        "max_depth": 3,
+        "n_estimators": 200,
+        "min_child_weight": 5
+      },
+      "cv": [
+        {
+          "max_depth": 2,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.636
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6426
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6286
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6429
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 200,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6414
+        },
+        {
+          "max_depth": 4,
+          "n_estimators": 500,
+          "min_child_weight": 5,
+          "cv_mae_log": 0.6441
+        }
+      ]
+    },
+    "xgb_importance_h4": {
+      "above_clim": 0.0959,
+      "y0": 0.0787,
+      "mean8": 0.0695,
+      "spec_humidity_gkg_a12": 0.0434,
+      "sin_w": 0.043,
+      "clim_target": 0.0383,
+      "slope4": 0.0375,
+      "mean13": 0.0358,
+      "temp_dtr_c_a4": 0.0353,
+      "cos_w": 0.0343,
+      "spec_humidity_gkg_a0": 0.0302,
+      "precip_sat_mm_a8": 0.0293,
+      "mean4": 0.0277,
+      "clim_now": 0.0246,
+      "rel_humidity_pct_a0": 0.0245
+    },
+    "hybrid_importance_h4": {
+      "mean13": 0.0706,
+      "spec_humidity_gkg_a12": 0.057,
+      "clim_target": 0.0518,
+      "precip_sat_mm_a8": 0.0477,
+      "mean8": 0.0444,
+      "sin_w": 0.0406,
+      "above_clim": 0.0387,
+      "rel_humidity_pct_a0": 0.0384,
+      "temp_dtr_c_a0": 0.0346,
+      "cos_w": 0.0318,
+      "seasonal_lag": 0.0316,
+      "spec_humidity_gkg_a8": 0.0314,
+      "slope4": 0.0306,
+      "temp_dtr_c_a4": 0.0285,
+      "std8": 0.0277
+    }
+  }
+}

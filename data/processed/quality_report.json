@@ -1,0 +1,214 @@
+{
+  "sj": {
+    "city": "San Juan, Puerto Rico",
+    "rows": 1196,
+    "date_range": [
+      "1990-04-30",
+      "2013-04-23"
+    ],
+    "duplicate_dates": 0,
+    "week_length_days_counts": {
+      "7": 1172,
+      "8": 17,
+      "9": 6
+    },
+    "missing_case_values": 0,
+    "total_equals_sum_of_components": true,
+    "station_daily_missing_pct": {
+      "TMAX": 0.0,
+      "TMIN": 0.0,
+      "TAVG": 0.0,
+      "PRCP": 0.0
+    },
+    "station_tavg_reconstructed_days": 0,
+    "station_tavg_reconstructed_weeks": 0,
+    "station_weekly_gap_fill": {
+      "temp_avg_c": {
+        "missing_before": 0,
+        "method": "linear regression on proxy",
+        "slope": 1.026,
+        "intercept": 0.184,
+        "r": 0.89,
+        "filled": 0
+      },
+      "temp_min_c": {
+        "missing_before": 0,
+        "method": "linear regression on proxy",
+        "slope": 1.04,
+        "intercept": -2.162,
+        "r": 0.887,
+        "filled": 0
+      },
+      "temp_max_c": {
+        "missing_before": 0,
+        "method": "linear regression on proxy",
+        "slope": 0.977,
+        "intercept": 3.546,
+        "r": 0.831,
+        "filled": 0
+      },
+      "precip_mm": {
+        "missing_before": 0,
+        "method": "linear regression on proxy",
+        "slope": 0.407,
+        "intercept": 14.808,
+        "r": 0.535,
+        "filled": 0
+      }
+    },
+    "ndvi": {
+      "pixels_total": 4,
+      "pixels_kept": 2,
+      "pixel_means": {
+        "[18.4491119384766 -66.0930480957031]": 0.18,
+        "[18.4991111755371 -66.0930480957031]": 0.059,
+        "[18.4491119384766 -66.1430511474609]": 0.164,
+        "[18.4991111755371 -66.1430511474609]": 0.068
+      }
+    },
+    "missing_after_merge": {
+      "temp_avg_c": 0,
+      "temp_min_c": 0,
+      "temp_max_c": 0,
+      "temp_dtr_c": 0,
+      "precip_mm": 0,
+      "precip_sat_mm": 7,
+      "rel_humidity_pct": 0,
+      "spec_humidity_gkg": 0,
+      "dew_point_c": 0,
+      "ndvi": 16
+    },
+    "missing_final": {
+      "temp_avg_c": 0,
+      "temp_min_c": 0,
+      "temp_max_c": 0,
+      "temp_dtr_c": 0,
+      "precip_mm": 0,
+      "precip_sat_mm": 0,
+      "rel_humidity_pct": 0,
+      "spec_humidity_gkg": 0,
+      "dew_point_c": 0,
+      "ndvi": 0
+    },
+    "climate_robust_outliers_flagged": {
+      "temp_avg_c": 0,
+      "temp_min_c": 0,
+      "temp_max_c": 0,
+      "temp_dtr_c": 0,
+      "precip_mm": 27,
+      "precip_sat_mm": 20,
+      "rel_humidity_pct": 0,
+      "spec_humidity_gkg": 0,
+      "dew_point_c": 0,
+      "ndvi": 0
+    },
+    "train_rows": 988,
+    "test_rows": 208
+  },
+  "iq": {
+    "city": "Iquitos, Peru",
+    "rows": 676,
+    "date_range": [
+      "2000-07-01",
+      "2013-06-25"
+    ],
+    "duplicate_dates": 0,
+    "week_length_days_counts": {
+      "7": 662,
+      "8": 9,
+      "9": 4
+    },
+    "missing_case_values": 0,
+    "total_equals_sum_of_components": true,
+    "station_daily_missing_pct": {
+      "TMAX": 42.2,
+      "TMIN": 25.4,
+      "TAVG": 58.5,
+      "PRCP": 17.3
+    },
+    "station_tavg_reconstructed_days": 0,
+    "station_tavg_reconstructed_weeks": 184,
+    "station_weekly_gap_fill": {
+      "temp_avg_c": {
+        "missing_before": 272,
+        "method": "linear regression on proxy",
+        "slope": 0.371,
+        "intercept": 17.809,
+        "r": 0.631,
+        "filled": 272
+      },
+      "temp_min_c": {
+        "missing_before": 102,
+        "method": "linear regression on proxy",
+        "slope": 0.461,
+        "intercept": 12.198,
+        "r": 0.607,
+        "filled": 102
+      },
+      "temp_max_c": {
+        "missing_before": 207,
+        "method": "linear regression on proxy",
+        "slope": 0.371,
+        "intercept": 21.415,
+        "r": 0.68,
+        "filled": 207
+      },
+      "precip_mm": {
+        "missing_before": 160,
+        "method": "linear regression on proxy",
+        "slope": 0.622,
+        "intercept": 37.081,
+        "r": 0.326,
+        "filled": 160
+      }
+    },
+    "ndvi": {
+      "pixels_total": 4,
+      "pixels_kept": 4,
+      "pixel_means": {
+        "[-3.750892162323 -73.2434844970703]": 0.263,
+        "[-3.750892162323 -73.2934875488281]": 0.262,
+        "[-3.70089221000671 -73.2434844970703]": 0.221,
+        "[-3.80089211463928 -73.2434844970703]": 0.249
+      }
+    },
+    "missing_after_merge": {
+      "temp_avg_c": 0,
+      "temp_min_c": 0,
+      "temp_max_c": 0,
+      "temp_dtr_c": 0,
+      "precip_mm": 0,
+      "precip_sat_mm": 0,
+      "rel_humidity_pct": 0,
+      "spec_humidity_gkg": 0,
+      "dew_point_c": 0,
+      "ndvi": 1
+    },
+    "missing_final": {
+      "temp_avg_c": 0,
+      "temp_min_c": 0,
+      "temp_max_c": 0,
+      "temp_dtr_c": 0,
+      "precip_mm": 0,
+      "precip_sat_mm": 0,
+      "rel_humidity_pct": 0,
+      "spec_humidity_gkg": 0,
+      "dew_point_c": 0,
+      "ndvi": 0
+    },
+    "climate_robust_outliers_flagged": {
+      "temp_avg_c": 0,
+      "temp_min_c": 2,
+      "temp_max_c": 0,
+      "temp_dtr_c": 0,
+      "precip_mm": 8,
+      "precip_sat_mm": 0,
+      "rel_humidity_pct": 1,
+      "spec_humidity_gkg": 0,
+      "dew_point_c": 0,
+      "ndvi": 0
+    },
+    "train_rows": 468,
+    "test_rows": 208
+  }
+}

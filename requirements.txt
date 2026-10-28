@@ -1,0 +1,22 @@
+# Core analysis
+pandas
+numpy
+scipy
+statsmodels
+prophet
+xgboost
+scikit-learn
+joblib
+openpyxl
+# Figures (report)
+matplotlib
+seaborn
+# Backend
+fastapi
+uvicorn
+python-multipart
+pydantic
+# Frontend
+streamlit
+plotly
+requests

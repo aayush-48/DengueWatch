@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------
+# DengueWatch .gitignore
+# Trained models (models/), forecasts and metrics (reports/),
+# processed data and screenshots ARE committed on purpose, so the
+# app runs right after cloning without the 10-minute pipeline.
+# ---------------------------------------------------------------
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches and builds
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+nohup.out
+*.tmp
+*.pid
+
+# Local helper file created if prophet fails to install
+req-noprophet.txt
+
+# Project zip (submit separately; don't commit it into the repo)
+*.zip
+
+# Secrets / local settings (none are needed, but never commit them)
+.env
+.streamlit/secrets.toml
+
+# Prophet / CmdStan build artefacts
+cmdstan*/
+*.stan.hpp
+
+# Editors and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

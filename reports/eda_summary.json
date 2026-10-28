@@ -1,0 +1,188 @@
+{
+  "sj": {
+    "city": "San Juan, Puerto Rico",
+    "weeks": 1196,
+    "train_weeks": 988,
+    "test_weeks": 208,
+    "cases_mean": 38.84,
+    "cases_median": 21.0,
+    "cases_max": 461,
+    "cases_max_week": "1994-10-15",
+    "zero_weeks": 4,
+    "variance_to_mean": 76.2,
+    "skewness": 3.58,
+    "stationarity_log_cases": {
+      "adf_stat": -6.995,
+      "adf_p": 0.0,
+      "kpss_stat": 0.294,
+      "kpss_p": 0.1,
+      "verdict": "stationary"
+    },
+    "stationarity_log_cases_diff1": {
+      "adf_stat": -9.587,
+      "adf_p": 0.0,
+      "kpss_stat": 0.019,
+      "kpss_p": 0.1,
+      "verdict": "stationary"
+    },
+    "seasonal_strength": 0.513,
+    "trend_strength": 0.588,
+    "peak_season_week": 23,
+    "biggest_seasons": {
+      "1994/1995": 6690,
+      "2012/2013": 5283,
+      "2010/2011": 4696
+    },
+    "stl_anomaly_weeks": 106,
+    "best_climate_lags_anomaly": [
+      {
+        "variable": "temp_max_c",
+        "lag": 13,
+        "corr": 0.252
+      },
+      {
+        "variable": "temp_avg_c",
+        "lag": 13,
+        "corr": 0.25
+      },
+      {
+        "variable": "rel_humidity_pct",
+        "lag": 6,
+        "corr": 0.192
+      },
+      {
+        "variable": "temp_dtr_c",
+        "lag": 20,
+        "corr": 0.189
+      },
+      {
+        "variable": "temp_min_c",
+        "lag": 13,
+        "corr": 0.187
+      }
+    ],
+    "best_climate_lags_raw": [
+      {
+        "variable": "temp_avg_c",
+        "lag": 13,
+        "corr": 0.571
+      },
+      {
+        "variable": "temp_min_c",
+        "lag": 12,
+        "corr": 0.555
+      },
+      {
+        "variable": "temp_max_c",
+        "lag": 13,
+        "corr": 0.545
+      },
+      {
+        "variable": "spec_humidity_gkg",
+        "lag": 10,
+        "corr": 0.526
+      },
+      {
+        "variable": "dew_point_c",
+        "lag": 10,
+        "corr": 0.524
+      }
+    ],
+    "acf_lag1": 0.926,
+    "acf_lag52": 0.249,
+    "train_mean_cases": 33.43
+  },
+  "iq": {
+    "city": "Iquitos, Peru",
+    "weeks": 676,
+    "train_weeks": 468,
+    "test_weeks": 208,
+    "cases_mean": 7.57,
+    "cases_median": 4.0,
+    "cases_max": 116,
+    "cases_max_week": "2004-12-09",
+    "zero_weeks": 127,
+    "variance_to_mean": 17.6,
+    "skewness": 4.06,
+    "stationarity_log_cases": {
+      "adf_stat": -5.212,
+      "adf_p": 0.0,
+      "kpss_stat": 0.345,
+      "kpss_p": 0.1,
+      "verdict": "stationary"
+    },
+    "stationarity_log_cases_diff1": {
+      "adf_stat": -16.085,
+      "adf_p": 0.0,
+      "kpss_stat": 0.059,
+      "kpss_p": 0.1,
+      "verdict": "stationary"
+    },
+    "seasonal_strength": 0.414,
+    "trend_strength": 0.469,
+    "peak_season_week": 24,
+    "biggest_seasons": {
+      "2004/2005": 715,
+      "2008/2009": 694,
+      "2010/2011": 585
+    },
+    "stl_anomaly_weeks": 30,
+    "best_climate_lags_anomaly": [
+      {
+        "variable": "spec_humidity_gkg",
+        "lag": 4,
+        "corr": 0.343
+      },
+      {
+        "variable": "dew_point_c",
+        "lag": 6,
+        "corr": 0.336
+      },
+      {
+        "variable": "rel_humidity_pct",
+        "lag": 10,
+        "corr": 0.306
+      },
+      {
+        "variable": "temp_dtr_c",
+        "lag": 3,
+        "corr": -0.188
+      },
+      {
+        "variable": "temp_min_c",
+        "lag": 4,
+        "corr": 0.158
+      }
+    ],
+    "best_climate_lags_raw": [
+      {
+        "variable": "spec_humidity_gkg",
+        "lag": 1,
+        "corr": 0.368
+      },
+      {
+        "variable": "dew_point_c",
+        "lag": 1,
+        "corr": 0.36
+      },
+      {
+        "variable": "rel_humidity_pct",
+        "lag": 1,
+        "corr": 0.255
+      },
+      {
+        "variable": "temp_min_c",
+        "lag": 4,
+        "corr": 0.25
+      },
+      {
+        "variable": "temp_avg_c",
+        "lag": 7,
+        "corr": 0.202
+      }
+    ],
+    "acf_lag1": 0.82,
+    "acf_lag52": 0.063,
+    "train_mean_cases": 7.77
+  }
+}
